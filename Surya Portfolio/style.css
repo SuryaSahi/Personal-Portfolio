@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    font-weight: 400;
+}
+
+html , 
+body{
+    height: 100%;
+    width: 100%;
+    /* background-color: #dbe3e2; */
+}
+
+#cursor{
+    height: 15px;
+    width: 16px;
+    background-color: #111;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    /* pointer-events: none; */
+    z-index: -1;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    z-index: 999;
+}
+
+#nav>h1{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#nav #part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    z-index: 99;
+}
+
+#nav #part2 a{
+    padding: 7px 18px;
+    text-decoration: none;
+    color: #111;
+    margin: 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+#nav #part2 a #effect{
+    background-color: rgba(43, 194, 244, 0.889);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    transition: left 0.4s ease;
+}
+
+#nav #part2 a h5{
+    font-weight: 400;
+    position: relative;
+    z-index: 99;
+}
+
+#nav #part2 a:hover #effect{
+    left:0;
+}
+
+#container{
+    /* background-color: red; */
+    height: 60vh;
+    width: 50vw;
+    /* margin-right: 30%; */
+    padding: 80px;
+}
+
+#container h1{
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+button{
+    margin-top: 20px;
+    padding: 12px 10px;
+    font-size: 16px;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+.btn-resume{
+    margin-right: 10px;
+}
+
+.btn-contact{
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+#page2{
+    /* height: 100vh; */
+    width: 100%;
+    background-color: red;
+    top: 0;
+}
+
+#move{
+    background-color: #fff;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.mark{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    transform: translate(-100%);
+}
+
+.mark h1{
+    font-size: 4vw;
+    font-family: poppins;
+}
+
+.mark img{
+    height: 3.5vw;
+}
+
+#About{
+    height: 100%;
+    width: 100%;
+    /* background-color: #111; */
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    padding: 4vw 0;
+}
+#page3 h1{
+    display: flex;
+    justify-content: center;
+    font-size: 62px;
+    padding-bottom: 20px;
+}
+
+.elem{
+    height: 150px;
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+.elem button{
+    padding: 7px 18px;
+    border-radius: 50px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.elem h2{
+    font-size: 2vw;
+    font-weight: 400;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(43, 194, 244, 0.889);
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.4s;
+}
+
+.elem:hover .overlay{
+    top: 0;
+}
+
+
+#fixed-image{
+    height: 25vw;
+    width: 22vw;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 999999;
+    left: 50%;
+    top: 30%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+#lower{
+    display: flex;
+    position: relative;
+    margin-left: 50%;
+    top: 30%;
+}
+
+#upper{
+    display: flex;
+    margin-right: 50%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+#string{
+    height: 200px;
+    width:100%;
+    z-index: 99;
+}
+
+svg{
+    margin-left: 5%;
+    height: 350px;
+    /* width: 100%; */
+    color: #111;
+}
+
+#page4{
+    width: 100%;
+    height: 1200px;
+    display: flex;  
+}
+
+.timeline{
+    position: relative;
+    max-width: 100%;
+    margin: 100px auto;
+    top: 10%;
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+.text-box {
+    transition: transform 0.3s ease; /* Add transition for smoothness */
+}
+.text-box:hover{
+    background-color: rgba(43, 194, 244, 0.889);
+    color: white;
+    transform: translateY(-10px);
+}
+
+.text-box{
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left{
+    left: 20%;
+}
+
+.right{
+    left: 50%;
+}
+
+
+.text-box h2{
+    font-weight: 600;
+}
+
+#contactme{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 15%;
+}
+
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2{
+    font-weight: 500;
+    font-size: 3vw;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 320px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.contact-input{
+    width: 400px;
+    height: 50px;
+    border: 1px solid black;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border:2px solid black
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #111;
+    background-color: white;
+    gap: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.contact-left button:hover{
+    background-color: rgba(43, 194, 244, 0.889);
+
+}
+.contact-right img{
+    width: 400px;
+}
+
+@media(max-width:800px){
+    .contact-input{
+        width: 80px;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+
